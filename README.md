@@ -49,3 +49,7 @@ mingw32-make
 ```bash
 ./phone_book.exe
 ```
+
+## Interface Example
+
+![Interface Example](https://i.postimg.cc/t4SfvqNf/IMG-20250719-134144-594.jpg)
