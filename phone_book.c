@@ -17,7 +17,7 @@ int main(void)
         system("clear");
 
         printf("Здравствуйте! Вы открыли телефонную книгу. Выберите действие ниже:\n\n");
-        printf("[1] Добавить контакт.\n[2] Просмотреть контакты.\n[3] Удалить контакт.\n");
+        printf("[1] Добавить контакт.\n[2] Просмотреть контакты.\n[3] Удалить контакт.\n[CTRL + C] Выйти.\n");
 
         if(is_unknown_action == true)
         {
@@ -28,6 +28,8 @@ int main(void)
 
         if(scanf(" %d", &action) != 1)
         {
+            is_unknown_action = true;
+
             clear_buffer_input();
             continue;
         }
@@ -58,6 +60,7 @@ int main(void)
             default:
                 is_unknown_action = true;
                 clear_buffer_input();
+                break;
         }
     }
     return 0;
